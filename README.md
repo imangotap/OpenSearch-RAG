@@ -39,7 +39,7 @@ langchain-text-splitters FlagEmbedding openai pypdf cryptography
 ### 3. 環境変数設定
 ```bash
 export OPENAI_API_KEY=your_api_key
-export OPENSEARCH_PASSWORD=MyPassword123!
+export OPENSEARCH_PASSWORD=your_password
 ```
 
 ### 4. サーバー起動
