@@ -53,3 +53,13 @@ uvicorn app:app --reload
 | /upload | POST | ファイルアップロード |
 | /hybrid | GET | ハイブリッド検索 |
 | /chat | POST | 会話 |
+
+### 動作確認
+アプロード
+<img width="3802" height="1920" alt="Screenshot from 2026-05-25 01-57-39" src="https://github.com/user-attachments/assets/abe8a282-7fdd-402d-bee4-41773b849c5f" />
+ハイブリッド
+<img width="3802" height="1920" alt="Screenshot from 2026-05-25 02-05-57" src="https://github.com/user-attachments/assets/9d944881-214d-4c45-8842-c5134ce8c19e" />
+チャット
+<img width="2840" height="1913" alt="Screenshot from 2026-05-25 02-21-47" src="https://github.com/user-attachments/assets/f286dad0-9429-4527-87b8-25e89bc69918" />
+
+
