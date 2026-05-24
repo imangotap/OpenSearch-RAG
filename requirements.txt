@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+opensearch-py
+sentence-transformers
+langchain-text-splitters
+FlagEmbedding
+openai
+pypdf
+cryptography
