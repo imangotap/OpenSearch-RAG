@@ -17,7 +17,7 @@ import os
 # OpenSearch
 os_client = OpenSearch(
     hosts = [{"host":"localhost","port":9200}],
-    http_auth = ("admin","MyPassword123!"),
+    http_auth = ("admin",""),# <<<<<<<<<<< Password
     use_ssl = True,
     verify_certs = False,
     ssl_show_warn = False,
@@ -26,10 +26,10 @@ os_client = OpenSearch(
 #　埋め込みモデル
 embedding_model = SentenceTransformer("BAAI/BGE-M3")
 
-# cohere  　GPUなし場合、cohere使用、サーバーにGPU搭載している場合は　手書き　Flagreranker
+# cohere  　GPUなし場合、cohere使用、サーバーにGPU搭載している場合は　手書きFlagreranker
 #cohere_client = cohere.Client(os.getenv("COHERE_API_KEY",""))
 #OpenAI　　　
-openai_client = OpenAI(api_key = os.getenv("OPENAI_API_KEY","sk-###"),
+openai_client = OpenAI(api_key = os.getenv("OPENAI_API_KEY","sk-###"),#<<< key
                        base_url="https://openrouter.ai/api/v1",)
 
 # ================= INDEX Setting
@@ -39,8 +39,8 @@ VECTOR_DIM =  1024
 INDEX_MAPPING = {
     "settings":{ "index":{"knn":True,"knn.algo_param.ef_search":512,},
                  "analysis":{"analyzer":{"japanese_analyzer":{"type":"custom",
-                                                              "tokenizer":"standard",
-                                                              "filter":["lowercase"]
+                                                              "tokenizer":"kuromoji_tokenizer", #"standard"
+                                                              "filter":["lowercase"],
                                                               }
                                          }
                             }},
