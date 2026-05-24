@@ -26,7 +26,7 @@ FastAPI と OpenSearch を使ったハイブリッド検索 RAG システム。
 ```bash
 docker run -p 9200:9200 \
   -e "discovery.type=single-node" \
-  -e 'OPENSEARCH_INITIAL_ADMIN_PASSWORD=MyPassword123!' \
+  -e 'OPENSEARCH_INITIAL_ADMIN_PASSWORD=' \
   opensearchproject/opensearch:latest
 ```
 
