@@ -1,0 +1,2 @@
+# OpenSearch-RAG
+FastAPIとOpenSearchを使ったハイブリッドRAGシステム。密ベクトル検索とBM25検索をRRF融合し、リランク・コンテキスト展開を実装。日本語テキスト処理対応。
