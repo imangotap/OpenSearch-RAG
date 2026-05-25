@@ -8,7 +8,7 @@ from opensearchpy import OpenSearch,RequestsHttpConnection
 from sentence_transformers import SentenceTransformer
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-#import cohere    #サーバーGPUが搭載してない場合使用する。
+#import cohere                          # サーバーGPUが搭載してない場合使用する。Reranker
 from FlagEmbedding import FlagReranker  # GPU搭載の場合使用
 
 from openai import OpenAI
